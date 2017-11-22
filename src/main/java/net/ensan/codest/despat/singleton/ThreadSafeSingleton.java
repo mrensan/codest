@@ -4,7 +4,7 @@ package net.ensan.codest.despat.singleton;
 /**
  * Two different implementation of thread safe singleton.
  *
- * @author Shahram via (Book: Java Design Patterns by Pankaj Kumar)
+ * @author shahram at gmail.com Inspired from (Book: Java Design Patterns by Pankaj Kumar)
  */
 public class ThreadSafeSingleton {
 

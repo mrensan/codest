@@ -11,7 +11,7 @@ package net.ensan.codest.despat.singleton;
  * It will destroy the singleton pattern and both threads
  * will get the different instances of singleton class.
  *
- * @author Shahram via (Book: Java Design Patterns by Pankaj Kumar)
+ * @author shahram at gmail.com Inspired from (Book: Java Design Patterns by Pankaj Kumar)
  */
 public class LazyInitializedSingleton {
 

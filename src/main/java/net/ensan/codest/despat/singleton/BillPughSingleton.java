@@ -8,7 +8,7 @@ package net.ensan.codest.despat.singleton;
  * This is the most widely used approach for Singleton class as it doesn’t
  * require synchronization.
  *
- * @author Shahram via (Book: Java Design Patterns by Pankaj Kumar)
+ * @author shahram at gmail.com Inspired from (Book: Java Design Patterns by Pankaj Kumar)
  */
 public class BillPughSingleton {
 

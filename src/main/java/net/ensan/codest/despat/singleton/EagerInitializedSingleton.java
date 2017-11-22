@@ -7,7 +7,7 @@ package net.ensan.codest.despat.singleton;
  * that instance is created even though client application
  * might not be using it.
  *
- * @author Shahram via (Book: Java Design Patterns by Pankaj Kumar)
+ * @author shahram at gmail.com Inspired from (Book: Java Design Patterns by Pankaj Kumar)
  */
 public class EagerInitializedSingleton {
 

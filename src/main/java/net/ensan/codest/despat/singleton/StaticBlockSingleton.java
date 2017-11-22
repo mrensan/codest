@@ -5,7 +5,7 @@ package net.ensan.codest.despat.singleton;
  * except that instance of class is created in the static block that provides option
  * for exception handling.
  *
- * @author Shahram via (Book: Java Design Patterns by Pankaj Kumar)
+ * @author shahram at gmail.com Inspired from (Book: Java Design Patterns by Pankaj Kumar)
  */
 public class StaticBlockSingleton {
 
