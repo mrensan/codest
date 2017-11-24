@@ -37,6 +37,7 @@ import java.util.Formatter;
  * <p>In your solution, focus on <b>Correctness</b>. The performance of your
  * solution will not be the focus of this assessment.
  *
+ *
  * @author shahram at gmail.com
  */
 public class SixDigitClock {
