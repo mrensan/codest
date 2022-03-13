@@ -1,6 +1,10 @@
 package net.ensan.codest.codility;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Stack;
 
 /**
  * Calculates the Brackets of a given String is properly nested.
