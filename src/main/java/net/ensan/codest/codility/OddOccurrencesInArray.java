@@ -17,8 +17,8 @@ public class OddOccurrencesInArray {
 
     public int calculateOddOccurrencesInArray(int[] A) {
         int result = 0;
-        for (int i = 0 ; i < A.length ; i++) {
-            result ^= A[i];
+        for (final int i : A) {
+            result ^= i;
         }
         return result;
     }
