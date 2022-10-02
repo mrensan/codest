@@ -1,28 +1,22 @@
 package net.ensan.codest.codility;
 
+import net.ensan.codest.utils.IntegerArrayConverter;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.stream.Stream;
+import org.junit.jupiter.params.converter.ConvertWith;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class FrogRiverOneTest {
-
     private final FrogRiverOne frogRiverOne = new FrogRiverOne();
 
-    private static Stream<Arguments> testCases() {
-        return Stream.of(
-            Arguments.of(5, new int[] {1, 3, 1, 4, 2, 3, 5, 4}, 6),
-            Arguments.of(4, new int[] {1, 3, 1, 4, 2, 4, 1}, 4),
-            Arguments.of(6, new int[] {1, 3, 1, 4, 2, 4, 1, 5, 3}, -1)
-        );
-    }
-
     @ParameterizedTest
-    @MethodSource("testCases")
-    void calculateFrogRiver(int X, int[] A, int answer) {
+    @CsvSource({
+            "5, 6, '1, 3, 1, 4, 2, 3, 5, 4'",
+            "4, 4, '1, 3, 1, 4, 2, 4, 1'",
+            "6, -1, '1, 3, 1, 4, 2, 4, 1, 5, 3'"
+    })
+    void calculateFrogRiver(int X, int answer, @ConvertWith(IntegerArrayConverter.class) int[] A) {
         assertThat(frogRiverOne.solution(X, A)).isEqualTo(answer);
     }
 }
