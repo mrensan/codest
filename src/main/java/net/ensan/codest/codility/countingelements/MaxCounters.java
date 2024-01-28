@@ -29,4 +29,27 @@ public class MaxCounters {
         }
         return counters;
     }
+
+    public int[] solution2(int N, int[] A) {
+        int[] counters = new int[N];
+        int maxCounter = 0;
+        int totalMaxValues = 0;
+
+        for (final int item : A) {
+            if (item > N) {
+                totalMaxValues += maxCounter;
+                maxCounter = 0;
+                counters = new int[N];
+            } else {
+                counters[item - 1]++;
+                if (counters[item - 1] > maxCounter) {
+                    maxCounter = counters[item - 1];
+                }
+            }
+        }
+        for (int i = 0; i < counters.length ; i++) {
+            counters[i] += totalMaxValues;
+        }
+        return counters;
+    }
 }

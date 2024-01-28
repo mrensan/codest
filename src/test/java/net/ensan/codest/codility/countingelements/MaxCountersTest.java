@@ -14,7 +14,8 @@ class MaxCountersTest {
 
     @ParameterizedTest
     @CsvSource({
-            "5, '3, 4, 4, 6, 1, 4, 4', '3, 2, 2, 4, 2'"
+            "5, '3, 4, 4, 6, 1, 4, 4', '3, 2, 2, 4, 2'",
+            "1, '1, 1, 1, 2, 1', '4'"
     })
     void testMaxCounters(
             int N,
@@ -22,5 +23,6 @@ class MaxCountersTest {
             @ConvertWith(IntegerArrayConverter.class) int[] result
     ) {
         assertThat(maxCounters.solution(N, A)).isEqualTo(result);
+        assertThat(maxCounters.solution2(N, A)).isEqualTo(result);
     }
 }
