@@ -3,6 +3,22 @@ package net.ensan.codest.codility.prefixsums;
 public class PassingCars {
 
     public int solution(int[] A) {
+        int lastZeros = 0;
+        int result = 0;
+        for (int a: A) {
+            if (a == 0) {
+                lastZeros++;
+            } else if (a == 1) {
+                result += lastZeros;
+                if (result > 1000000000) {
+                    return -1;
+                }
+            }
+        }
+        return result;
+    }
+
+    public int solutionOld(int[] A) {
         if (A.length == 1) {
             return 0;
         }

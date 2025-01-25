@@ -8,7 +8,7 @@ package net.ensan.codest.codility;
  */
 public class CyclicRotation {
 
-    public int[] calculateCyclicRotation(int[] array, int shiftCount) {
+    public int[] calculateCyclicRotation1(int[] array, int shiftCount) {
         int[] result = new int[array.length];
 
         for (int i = 0; i < array.length; i++) {
@@ -32,6 +32,18 @@ public class CyclicRotation {
         int[] result = new int[array.length];
         System.arraycopy(array, array.length - shiftCount, result, 0, shiftCount);
         System.arraycopy(array, 0, result, shiftCount, array.length - shiftCount);
+        return result;
+    }
+
+    public int[] calculateCyclicRotation(int[] A, int K) {
+        int[] result = new int[A.length];
+        for (int i = 0; i < A.length; i++) {
+            int new_index = i + K;
+            while (new_index >= A.length) {
+                new_index -= A.length;
+            }
+            result[new_index] = A[i];
+        }
         return result;
     }
 }
