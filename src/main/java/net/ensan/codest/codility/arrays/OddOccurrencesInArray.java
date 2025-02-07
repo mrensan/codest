@@ -1,9 +1,4 @@
-package net.ensan.codest.codility;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+package net.ensan.codest.codility.arrays;
 
 /**
  * Calculates the OddOccurrencesInArray from a desired array.

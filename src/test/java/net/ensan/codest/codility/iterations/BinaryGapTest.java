@@ -1,4 +1,4 @@
-package net.ensan.codest.codility;
+package net.ensan.codest.codility.iterations;
 
 import org.junit.Test;
 

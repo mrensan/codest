@@ -1,8 +1,4 @@
-package net.ensan.codest.codility;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package net.ensan.codest.codility.iterations;
 
 /**
  * Calculates the BinaryGAP in a desired number.
