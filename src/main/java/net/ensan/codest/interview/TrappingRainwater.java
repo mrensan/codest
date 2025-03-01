@@ -1,19 +1,24 @@
-package net.ensan.codest.etc.dp;
+package net.ensan.codest.interview;
 
 /**
  * Requirement:
  * Trapping Rainwater Problem states that given an array of n non-negative integers arr[]
  * representing an elevation map where the width of each bar is 1, compute how much water
  * it can trap after rain.
- *
+ * <p>
  * Examples:
  * Input: arr[] = [3, 0, 1, 0, 4, 0, 2]
+ * <p>
  * Output: 10
- *
+ * <p>
+ * <p>
+ * <blockquote><pre>
  *      #
  *  #www#
  *  #www#w#
  *  #w#w#w#
+ * </pre></blockquote>
+ * <p>
  */
 public class TrappingRainwater {
 
